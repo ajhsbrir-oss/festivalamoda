@@ -1,10 +1,8 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
+// ⚙️ ajuste para o GitHub Pages
 export default defineConfig({
-  base: '/festival-a-moda/',
   plugins: [react()],
-  optimizeDeps: {
-    exclude: ['lucide-react'],
-  },
-});
+  base: '/festivalamoda/', // <-- coloque exatamente o nome do seu repositório aqui!
+})
